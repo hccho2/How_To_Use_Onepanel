@@ -19,7 +19,7 @@
 	``` js
 	> pip install onepanel	
 	``` 
- * cmd창에서 local pc에 project를 만들기를 원하는 곳으로 이동
+ * cmd창에서 local pc에 project 만들기를 원하는 곳으로 이동
 	``` js
 	> onepanel clone 본인ID/projects/프로젝트이름
 	> onepanel clone hccho/projects/myproject

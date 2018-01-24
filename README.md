@@ -1,4 +1,7 @@
 # onepanel 사용법(Windows환경)
+### GPU가 없어, 딥러닝을 돌릴 수 없는 분에게만 권장
+ * 대기 시간이 많이 걸리기 때문에...
+
 ### https://c.onepanel.io/
  * onepanel 사이트에 가서 ID를 만든다.
  
@@ -40,6 +43,26 @@
  * 새로운 파일이 생기거나, 기존 파일의 내용이 바뀌면 위의 3개 명령을 순서대로 실행하면 된다.
  * 파일들이 잘 올려졌는지, onepanel 사이트에서 확인하면 된다.
 ![Project](./project.png)	
+
+
 ### 출력파일 path 설정
  * 소스 코드 내에서 출력파일을 만들 경우에, path를 잘 설정해야 한다. 그냥 파일 이름만 명시하면, working 디렉토리에 생기지는 않는다.
  * '~/output/파일이름"
+ 
+### Python 파일 실행하기
+ * 실행은 onepanel 사이트의 왼쪽 Jobs 탭을 누르면 된다. 그 다음, +Create을 누르면 된다.
+![Jobs](./jobs.png)	 
+ * 실행 명령 입력, Machine Type 선택, Environment 선택
+ * 실행명령 예1:
+  	``` js
+	python xxx.py
+	```   
+ * 실행명령 예2: 복수의 명령은 &&로 연결
+  	``` js
+	python xxx.py && python xxx2.py
+	```   
+
+### Test 결과
+ * CPY: 0.5 Type은 비교적(?) 빨리 실행됨
+ * GPU: 1 이나, GPU: 2는 짧게는 5분, 길게는 10시간 이상 대기 후 실행 됨.
+![Output](./output.png)	

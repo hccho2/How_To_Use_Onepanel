@@ -21,4 +21,12 @@
 	> onepanel clone 본인ID/projects/프로젝트이름
 	> onepanel clone hccho/projects/myproject
 	``` 
- * 위와 같이 실행하면, 프로젝트이름과 동일한 디렉토리가 생성된다.
+ * 위와 같이 실행하면, 프로젝트이름과 동일한 디렉토리가 생성된다. 그 디렉토리로 이동한다.
+ 	``` js
+	> cd myproject
+	``` 
+ * local pc상에서 git에 로그인을 해야 한다. 이 로그인 과정은 처음 딱 1번만 하면 된다.
+ 	``` js
+	> git config --global user.email xxxx@gmail.com
+	```  
+ * myproject(예) 아래에 필요한 소스 파일과 그 외 필요한 파일을 만들면 된다. 하위 디렉토리를 만들도 된다.
